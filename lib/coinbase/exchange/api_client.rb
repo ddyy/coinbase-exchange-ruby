@@ -145,10 +145,10 @@ module Coinbase
       #
       # Orders
       #
-      def bid(amt, price, params = {})
+      def bid(params = {})
         params[:product_id] ||= @default_product
-        params[:size] = amt
-        params[:price] = price
+        #params[:size] = amt
+        #params[:price] = price
         params[:side] = "buy"
 
         out = nil
